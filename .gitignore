@@ -21,6 +21,9 @@ wiki/*
 # Sublime
 *sublime*
 
+# Intellij
+.idea/
+
 # temporary files
 *scratch*
 *tmp*
@@ -169,3 +172,4 @@ dmypy.json
 .terraform/
 terraform.tfstate
 terraform.tfstate.backup
+.terraform.lock.hcl
