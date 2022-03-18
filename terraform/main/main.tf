@@ -51,8 +51,17 @@ variable "metrics_ip" {
 }
 
 // PROVIDER/AWS ##############################
+
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 3.0"
+    }
+  }
+}
+
 provider "aws" {
-  version = "~> 2.49"
   region  = var.aws_region
 }
 
@@ -308,6 +317,7 @@ output "scheduler_dns" {
 }
 output "scheduler_pg_password" {
   value = module.scheduler.pg_password
+  sensitive = true
 }
 
 output "monitor_dns" {

@@ -1,6 +1,6 @@
 {
   "variables": {
-    "image_version": "004"
+    "image_version": "20220317"
   },
 
   "builders": [
