@@ -2,8 +2,6 @@
 // SCHEDULER MODULE
 ///////////////////////////////////////////////////////////
 
-provider random {}
-
 // VARIABLES ##############################
 
 variable "scheduler_port" {

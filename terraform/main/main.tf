@@ -66,7 +66,6 @@ provider "aws" {
 }
 
 provider "local" {
-  version = "~> 1.4"
 }
 
 resource "aws_security_group" "internal" {
